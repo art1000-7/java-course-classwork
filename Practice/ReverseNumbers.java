@@ -1,4 +1,4 @@
-package Shrava.ClassWorks;
+package Shrava.ClassWorks.Practice;
 
 class Solution {
     public int reverse(int x) {
