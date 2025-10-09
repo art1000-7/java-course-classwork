@@ -10,6 +10,11 @@ public class Main {
 
         PremiumSubscription premium = new PremiumSubscription("Premium Plan", 9.99, 5.00);
         premium.displayInfo();
+
+        System.out.println();
+
+        PremiumSubscriptionV2 premiumV2 = new PremiumSubscriptionV2("Premium Plan V2", 9.99, 7.00);
+        premiumV2.displayInfo();
     }
 }
 
@@ -50,3 +55,22 @@ class PremiumSubscription extends Subscription {
         System.out.println("Premium Fee: $" + premiumFee);
     }
 }
+
+class PremiumSubscriptionV2 extends Subscription {
+    private double premiumFee;
+
+    public PremiumSubscriptionV2(String name, double price, double premiumFee) {
+        super(name, price);
+        this.premiumFee = premiumFee;
+    }
+
+    public double getPremiumFee() { return premiumFee; }
+    public void setPremiumFee(double premiumFee) { this.premiumFee = premiumFee; }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Premium Fee: $" + premiumFee);
+    }
+
+} 
