@@ -3,21 +3,18 @@ package Shrava.ClassWorks.OOP;
 public class Main {
 
     public static void main(String[] args) {
-        // Создаём обычную подписку
         Subscription basic = new Subscription("Basic Plan", 9.99);
         basic.displayInfo();
 
         System.out.println();
 
-        // Создаём премиум подписку
         PremiumSubscription premium = new PremiumSubscription("Premium Plan", 9.99, 5.00);
         premium.displayInfo();
     }
 }
 
-// Базовый класс
 class Subscription {
-    private String name;   // инкапсуляция — делаем поля private
+    private String name;   // инкапсуляция — private
     private double price;
 
     public Subscription(String name, double price) {
@@ -25,7 +22,6 @@ class Subscription {
         this.price = price;
     }
 
-    // Геттеры и сеттеры для инкапсуляции
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
@@ -37,9 +33,8 @@ class Subscription {
     }
 }
 
-// Наследование
 class PremiumSubscription extends Subscription {
-    private double premiumFee;  // тоже инкапсулируем
+    private double premiumFee;
 
     public PremiumSubscription(String name, double price, double premiumFee) {
         super(name, price);
