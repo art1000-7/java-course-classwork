@@ -1,4 +1,4 @@
-package Shrava.ClassWorks.UService;
+package UService;
 
 public class UserService {
 

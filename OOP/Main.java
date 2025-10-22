@@ -1,4 +1,4 @@
-package Shrava.ClassWorks.OOP;
+package OOP;
 
 public class Main {
 

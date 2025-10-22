@@ -1,4 +1,4 @@
-package Shrava.ClassWorks.UService;
+package UService;
 
 public class Main {
     public static void main(String[] args) {
